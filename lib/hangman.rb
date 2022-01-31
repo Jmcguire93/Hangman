@@ -4,4 +4,8 @@ class Hangman
   def self.random_word
     DICTIONARY.sample
   end
+
+  def initialize 
+    @secret_word = Hangman.random_word
+  end
 end
