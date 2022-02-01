@@ -67,4 +67,13 @@ class Hangman
     p "Enter a char:"
     try_guess(gets.chomp)
   end
+
+  def win?
+    if @guess_word.join("") == @secret_word
+      p "WIN"
+      return true 
+    else
+      return false 
+    end
+  end
 end
