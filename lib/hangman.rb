@@ -76,4 +76,13 @@ class Hangman
       return false 
     end
   end
+
+  def lose?
+    if @remaining_incorrect_guesses == 0 
+      p "LOSE"
+      return true 
+    else 
+      return false 
+    end
+  end
 end
